@@ -49,15 +49,9 @@ def main():
     print("NumPy.quantile():")
     print(
         "\n",
-        "0.01", quantiles[0], "\n",
-        "0.05", quantiles[1], "\n",
-        "0.10", quantiles[2], "\n",
         "0.25", quantiles[3], "\n",
         "0.50", quantiles[4], "\n",
         "0.75", quantiles[5], "\n",
-        "0.90", quantiles[6], "\n",
-        "0.95", quantiles[7], "\n",
-        "0.99", quantiles[8],
     )
     print()
     median = np.quantile(
