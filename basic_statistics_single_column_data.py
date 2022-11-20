@@ -7,6 +7,7 @@ import scipy.stats as stats
 import datasense as ds
 import pandas as pd
 import numpy as np
+import math
 
 
 def main():
@@ -75,8 +76,8 @@ def main():
     print("Interquartile range      :", iqr)
     print(
         "95 % CI of the median    :",
-        median - 1.57 * iqr / np.sqrt(df[series_name_y].count()),
-        median + 1.57 * iqr / np.sqrt(df[series_name_y].count()),
+        median - 1.57 * iqr / math.sqrt(df[series_name_y].count()),
+        median + 1.57 * iqr / math.sqrt(df[series_name_y].count()),
     )
     print()
     print("Average                  :", mean)
